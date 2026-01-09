@@ -6,7 +6,7 @@ import {Product, Products} from 'boundless-commerce-components';
 import Link from 'next/link';
 import {Metadata} from 'next';
 import {IAdapterNegativeResponse} from 'boundless-api-client';
-
+export const dynamic = 'force-dynamic';
 export default async function CategoryPage({params: {slug}}: IProps) {
 	const category = await fetchCategory(slug);
 
